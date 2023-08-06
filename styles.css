@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .search-container {
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    */
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .search-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  input[type="text"] {
+    width: 100%; /* Set the width to 100% to make them longer */
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .search-button {
+    padding: 60px 30px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 40px; 
+    align-self: center;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  
+  #searchResults {
+    /* Style the search results section here */
+  }
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #3ebd3e; /* Green color */
+  padding-top: 20px;
+}
+
+.sidebar a {
+  display: block;
+  color: #fff; /* White color for the words */
+  padding: 16px;
+  text-decoration: none;
+  background-color: #3ebd3e; /* Green color for the buttons */
+  transition: background-color 0.3s, color 0.3s; /* Smooth color change transition */
+}
+
+.sidebar a:hover {
+  background-color: #fff; /* White color on hover */
+  color: #000; /* Black color for the words on hover */
+}
+
+.main-content {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+.options-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.option-button {
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.option-button:hover {
+  background-color: #3ebd3e;
+  color: #fff;
+}
+
+.option-button.active {
+  background-color: #3ebd3e;
+  color: #fff;
+}
